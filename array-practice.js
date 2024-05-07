@@ -1,6 +1,10 @@
 const findMinimum = arr => {
 
   // Your code here
+  return arr.reduce((acc, CV) => {
+    acc < CV ? acc = acc : acc = CV;
+    return acc;
+  }, arr[0]);
 
 };
 
